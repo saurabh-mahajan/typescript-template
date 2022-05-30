@@ -12,10 +12,14 @@ describe("Dummy Test", () => {
         const gettingValue = primeFactorization(0)
         expect(gettingValue).toEqual([])
     })
-    it("check for prime factorization of 99, we should get output as 0", () => {
+    it("check for prime factorization of 99, we should get output as [3,3,11]", () => {
         const gettingValue = primeFactorization(99)
         expect(gettingValue).toEqual([3,3,11])
     })
+    it("check for prime factorization of 343, we should get output as [7]", () => {
+            const gettingValue = primeFactorization(343)
+            expect(gettingValue).toEqual([7,7,7])
+        })
 
 })
 
